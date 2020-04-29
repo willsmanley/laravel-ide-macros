@@ -169,13 +169,13 @@ class MacrosCommand extends Command
             if ($index) {
                 $this->write(", ");
             }
-            
+
             if ($parameter->isVariadic()) {
                 $this->write('...');
             }
 
             if ($parameter->hasType()) {
-                $this->write($parameter->getType() . " ");
+//                $this->write($parameter->getType() . " ");
             }
 
             $this->write("$" . $parameter->getName());
@@ -188,7 +188,7 @@ class MacrosCommand extends Command
 
         $this->write(")");
         if ($returnType) {
-            $this->write(": $returnType");
+//            $this->write(": $returnType");
         }
         $this->writeLine(" {");
 
